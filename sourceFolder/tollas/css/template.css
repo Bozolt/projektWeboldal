@@ -1,0 +1,80 @@
+*  {
+padding: 0;
+margin: 0;
+border: 0;
+}
+
+body {
+	color: #2b2a28;
+	width: 100%;
+	background: #3b3b3b url(../images/badminton.png) no-repeat fixed center top;
+	font-size: 13px;
+	line-height: 1.3;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.clear { clear: both; }  
+.bold { font-weight: bold; }
+a { color: #912a2c; text-decoration: none; }
+a:hover { color: #912a2c; }
+a:active { outline: none; } 
+a:focus { -moz-outline-style: none; }
+
+#orbital { width: 900px; position: relative; margin: 0px auto 20px; }
+#header { width: 972px; height: 224px; position: fixed; left: 50%; top: 0px; margin-left: -486px; background: url(../images/header_back.jpg) no-repeat left top; z-index: 1; }
+#content_wrapper { width: 890px; border: #912a2c 5px solid; border-radius: 10px; background: url(../images/content_back.png); padding: 0px; margin-top: 170px; box-shadow: 0 0 30px #000; position:relative; }
+#content_top_gradient { width: 890px; height:90px; background: url(../images/content_top_gradient.png); position: absolute; left: 41px; bottom: -90px; }
+#content { width: 850px; padding: 90px 20px 20px; }
+#content_separator { width: 850px; background: url(../images/content_back_separator.png) repeat-y; }
+#left { width: 617px; float: left; }
+#sidebar { width: 190px; float: right; }
+#site_logo { display: block; width: 171px; height: 171px; position: absolute; left: 10px; top: 0px; background: url(../images/logo.png) no-repeat left top; }
+
+#login_box { font-size: 18px; color: #a7b39a; position: absolute; right: 41px; top: 0px; border-left: #797b70 1px solid; border-right: #797b70 1px solid; border-bottom: #797b70 1px solid; background: url(../images/login_box_back.png) repeat-x left bottom; padding: 12px 20px; border-radius: 0 0 10px 10px; }
+#login_box .loginbox_title { float: left; display: inline-block; margin-right: 20px; margin-top: 16px; }
+#login_box .login_menu { float: left; margin-top: 19px; font-size: 14px; margin-right: 10px; }
+#login_box .login_menu a.register, #login_box .login_menu a.lost_password { color: #fff; text-decoration: none; text-shadow: 2px 2px 2px #000; display: inline-block; margin-right: 10px; float: left;  }
+#login_box .login_menu a.register:hover, #login_box .login_menu a.lost_password:hover { text-shadow: 1px 1px 1px #444;  }
+#login_box .login_username { float: left; margin-right: 10px; }
+#login_box .login_password { float: left; margin-right: 10px; }
+#login_box  label { font-size: 12px; }
+#login_box .inputbox { background: #e7ebd0; border: 1px solid #303030; border-radius: 5px; width: 110px; padding: 5px 2px; height: 17px; }
+#login_box .button_login { float: right; margin-top: 15px; background: url(../images/search_button_back.jpg) repeat-x scroll left center rgba(0, 0, 0, 0); border: #143b27 1px solid; border-radius: 5px; color: #FFFFFF; font-size: 18px; height: 29px; width: 86px; cursor: pointer; }
+
+#logout_box { font-size: 18px; color: #a7b39a; position: absolute; right: 41px; top: 0px; border-left: #797b70 1px solid; border-right: #797b70 1px solid; border-bottom: #797b70 1px solid; background: url(../images/login_box_back.png) repeat-x left bottom; padding: 12px 20px; border-radius: 0 0 10px 10px; }
+#logout_box ul { float: left; margin-right: 30px; margin-top: 5px; }
+#logout_box ul li { list-style: none; float: left; }
+#logout_box ul li a { float: left; color: #fff; display: inline-block; margin-right: 10px; text-decoration: none; font-size: 14px; text-shadow: 2px 2px 2px #000; }
+#logout_box ul li a:hover { text-shadow: 1px 1px 1px #444; }
+#logout_box .button_logout { float: right; background: url(../images/logout_button_back.jpg) repeat-x scroll left center rgba(0, 0, 0, 0); border: #6b1213 1px solid; border-radius: 5px; color: #FFFFFF; font-size: 18px; height: 29px; width: 86px; cursor: pointer; }
+
+#search { position: absolute; right: 41px; top: 50%; margin-top: -8px; }
+.inputbox_search { background: #e7ebd0; border-bottom: 1px solid #303030; border-left: 1px solid #303030; border-radius: 5px 0 0 5px; border-top: 1px solid #303030; height: 17px; padding: 5px 2px; position: absolute; right: 82px; width: 120px; z-index: 0; }
+.button_search { background: url(../images/search_button_back.jpg) repeat-x scroll left center rgba(0, 0, 0, 0); border: #143b27 1px solid; border-radius: 5px; color: #FFFFFF; font-size: 18px; height: 29px; margin-left: -4px; position: absolute; right: 0; width: 86px; z-index: 1; cursor: pointer; }
+
+#mainmenu  { bottom: 0; left: 41px; position: absolute;}
+#mainmenu > ul > li { display: inline-block; list-style: none; height: 48px; padding-left: 8px; background: url(../images/mainmenu_back_left.png) no-repeat left top; float: left; }
+#mainmenu > ul > li > a { display: inline-block; text-decoration: none; height: 28px; padding: 12px 12px 8px 4px; background: url(../images/mainmenu_back_right.png) no-repeat right top; color: #a7b39a; font-size: 18px; }
+#mainmenu > ul > li.active { background: url(../images/mainmenu_back_left_active.png) no-repeat left top; }
+#mainmenu > ul > li.active > a { background: url(../images/mainmenu_back_right_active.png) no-repeat right top; color: #fff; }
+#mainmenu > ul > li.special { background: url(../images/mainmenu_back_special_left.png) no-repeat left top;}
+#mainmenu > ul > li.special > a { background: url(../images/mainmenu_back_special_right.png) no-repeat right top; color: #ffd886; }
+#mainmenu > ul > li.special.active { background: url(../images/mainmenu_back_special_left_active.png) no-repeat left top;}
+#mainmenu > ul > li.special.active > a { background: url(../images/mainmenu_back_special_right_active.png) no-repeat right top; color: #fff; }
+#mainmenu li a:hover { color: #fff!important; }
+
+#mainmenu > ul > li  > ul { width: auto; background: #b56300; border-left: #fff 1px solid; border-bottom: #fff 1px solid; border-right: #fff 1px solid; padding: 2px 0; margin-left: -8px }
+#mainmenu > ul > li  > ul > li { float: none; list-style: none; font-size: 13px; display: block; }
+#mainmenu > ul > li  > ul > li > a { text-decoration: none; color: #fedcb3; display: block; padding: 2px 10px 3px; background: url(../images/submenu_special_separator.png) repeat-x left bottom; }
+#mainmenu > ul > li  > ul > li.last > a { background: none; }
+#mainmenu > ul > li  > ul > li > a:hover { background: #cb7a00 url(../images/submenu_special_separator.png) repeat-x left bottom; }
+#mainmenu > ul > li  > ul > li.last > a:hover { background: #cb7a00; background-image: none; }
+
+h1 { font-size: 18px; margin-bottom: 12px; font-weight: normal; }
+h2 { font-size: 15px; margin-bottom: 12px; font-weight: normal; }
+p { text-align: justify; margin-bottom: 12px; }
+
+#news h2 { margin-bottom: 0px!important; }
+#news .date { font-size: 12px; margin-bottom: 12px; color: #7e7c78; }
+#news_block { margin-bottom: 20px; padding-bottom: 8px; border-bottom: #912a2c 3px solid; }
+#news_block .last { margin-bottom: 0px; padding-bottom: 0px; border-bottom: none; }
